@@ -7,7 +7,6 @@ body {
   font-size: 13px;
   line-height: 18px;
   max-width: 1280px;
-  background-color: #ffffff;
   color: #515076;
 }
 
@@ -17,7 +16,6 @@ h1 {
   line-height: 78px;
   margin: 0;
   text-align: center;
-  color: #515076;
   margin-top: 220px;
 }
 
@@ -57,7 +55,8 @@ h1 {
   line-height: 27px;
 }
 
-ul ul {
+.components {
+  padding-left: 15px;
   margin-bottom: 25px;
 }
 
