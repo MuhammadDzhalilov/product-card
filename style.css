@@ -6,7 +6,6 @@ body {
   font-family: Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  max-width: 1280px;
   color: #515076;
 }
 
@@ -20,13 +19,14 @@ h1 {
 }
 
 .container {
+  max-width: 1280px;
   margin-left: 85px;
   margin-right: 85px;
   margin-top: 110px;
   margin-bottom: 116px;
 }
 
-.product-list {
+.product-card {
   list-style-type: none;
   background-color: #5150761a;
   width: 340px;
