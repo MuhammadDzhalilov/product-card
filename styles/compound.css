@@ -1,0 +1,14 @@
+.compound__list {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.compound__name {
+  display: block;
+  margin-bottom: 5px;
+}
