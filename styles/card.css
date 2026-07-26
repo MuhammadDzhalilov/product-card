@@ -42,3 +42,7 @@
 .card__description p {
   margin: 0;
 }
+
+.button-toggle-color-card {
+  background-color: #52345a;
+}
