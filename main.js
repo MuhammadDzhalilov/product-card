@@ -11,8 +11,8 @@ colorChangeBtn.addEventListener ('dblclick', () => {
   productCard.style.backgroundColor = 'grey';  
 })
 
-const productCards= document.querySelectorAll ('.card');
-const allColorChangeBtn= document.querySelector ('#all-cards-color-change-btn');
+const productCards = document.querySelectorAll ('.card');
+const allColorChangeBtn = document.querySelector ('#all-cards-color-change-btn');
 
 allColorChangeBtn.addEventListener ('click', () => {
   productCards.forEach((card) => card.style.backgroundColor = myColor) 
@@ -27,7 +27,6 @@ openGoogleButton.addEventListener ('click', openGoogle)
 
 function openGoogle() {
   const answer = confirm('Are you serious?')
-
   if (answer === true) {
     window.open('https://google.com')
   } else {
@@ -37,7 +36,8 @@ function openGoogle() {
 
 const outputlogButton = document.querySelector('#output-console-log');
 
-outputlogButton.addEventListener ('click', () => {outputConsoleLog('Пацаны ваще ребята', 'За вами слежка.');
+outputlogButton.addEventListener ('click', () => {
+  outputConsoleLog('Пацаны ваще ребята', 'За вами слежка.');
 });
 
 function outputConsoleLog(message, alertText) {
@@ -47,9 +47,10 @@ function outputConsoleLog(message, alertText) {
   console.log(message)
 }
 
-const titleOutputConsoleLog = document.querySelector('.title')
+const logTitle = document.querySelector('.title')
 
-titleOutputConsoleLog.addEventListener('mouseover', () => {outputConsoleLog(titleOutputConsoleLog.textContent, null);
+logTitle.addEventListener('mouseover', () => {
+  outputConsoleLog(logTitle.textContent, null);
 });
 
 const toggleColorButton = document.querySelector("#toggle-color-btn")
@@ -58,10 +59,10 @@ toggleColorButton.addEventListener('click', () => {
   toggleColorButton.classList.toggle('button-toggle')
 })
 
-const buttonToggleThirdCardColor = document.querySelector('#toggle-third-card-btn')
+const thirdCardToggleButtonColor = document.querySelector('#toggle-third-card-btn')
 
 const thirdCard = document.querySelector('.card_third')
 
-buttonToggleThirdCardColor.addEventListener('click', () => {
+thirdCardToggleButtonColor.addEventListener('click', () => {
   thirdCard.classList.toggle('button-toggle-color-card')
 })
