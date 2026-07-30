@@ -23,8 +23,6 @@ allColorChangeBtn.addEventListener('dblclick', () => {
   productCards.forEach((card) => card.classList.toggle('card--second-color')) 
 })
 
-
-
 const openGoogleButton = document.querySelector('#open-page-google-btn');
 
 openGoogleButton.addEventListener('click', openGoogle)
