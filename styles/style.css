@@ -11,6 +11,5 @@ body {
 }
 
 .button-toggle {
-  background-color: blue;
+  background-color: blue !important;
 }
-
