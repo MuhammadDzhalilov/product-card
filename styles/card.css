@@ -4,6 +4,14 @@
   width: 100%;
 }
 
+.card--active {
+  background-color: yellow;
+}
+
+.card--second-color {
+  background-color: red;
+}
+
 .card__image {
   display: block;
   margin-bottom: 30px;
@@ -41,4 +49,8 @@
 
 .card__description p {
   margin: 0;
+}
+
+.button-toggle-color-card {
+  background-color: #52345a;
 }

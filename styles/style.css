@@ -9,3 +9,7 @@ body {
   font-size: 13px;
   line-height: 18px;
 }
+
+.button-toggle {
+  background-color: blue !important;
+}
