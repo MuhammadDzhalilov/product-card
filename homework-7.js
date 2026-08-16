@@ -34,3 +34,21 @@ function buyProduct(budget) {
 
 buyProduct(1300)
 buyProduct(1500)
+
+// Отсюда уже приступил к выполнению 6 и 7 задания.
+
+function checkWorkoutStatus(name, goal, currentSteps) {
+  if (currentSteps >= goal) {
+    console.log(`Отличная работа, ${name}! Дневная норма в ${goal} шагов выполнена! Количество шагов на данный момент составляет ${currentSteps}.`)
+  } else {
+    const leftToWalk = goal - currentSteps;
+    console.log(`Привет, ${name}! До цели осталось пройти еще ${leftToWalk} шагов. Вперёд!`)
+  }
+}
+
+checkWorkoutStatus("Кенгуру", 750, 0)
+
+
+const heroName = "Мафиозник";
+const hat = "Розовая федора";
+const area = "Шумиловский городок";
