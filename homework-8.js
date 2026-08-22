@@ -89,20 +89,30 @@ console.log(aggGroup)
 
 // (10) Создание функции с методом ".map"
 
-
 const modifiedAggGroup = aggGroup.map((player) => {
   let aggPropertyList;
   
   if ( player.age >= 30 ) {
-    aggPropertyList = { ...player,
+    aggPropertyList = {
+    ...player,
     isVeteran: true
     }
   } else {
-    aggPropertyList = { ...player,
+    aggPropertyList = {
+    ...player,
     isVeteran: false
     }
   }
-  return aggPropertyList
+  return aggPropertyList;
+});
+
+const modifiedAggGroupTwo = aggGroup.map((player) => {
+  let aggPropertyListTwo = {
+    ...player, 
+    "isVeteran": player.age >= 30 ? true : false
+  };
+  return aggPropertyListTwo;
 });
 
 console.log(modifiedAggGroup)
+console.log(modifiedAggGroupTwo)
