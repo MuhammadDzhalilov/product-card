@@ -48,7 +48,6 @@ function checkWorkoutStatus(name, goal, currentSteps) {
 
 checkWorkoutStatus("Кенгуру", 750, 0)
 
-
 const heroName = "Мафиозник";
 const hat = "Розовая федора";
 const area = "Шумиловский городок";
