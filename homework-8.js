@@ -94,25 +94,37 @@ const modifiedAggGroup = aggGroup.map((player) => {
   
   if ( player.age >= 30 ) {
     aggPropertyList = {
-    ...player,
-    isVeteran: true
+      ...player,
+      isVeteran: true
     }
   } else {
     aggPropertyList = {
-    ...player,
-    isVeteran: false
+      ...player,
+      isVeteran: false
     }
   }
   return aggPropertyList;
 });
 
+console.log(modifiedAggGroup)
+
 const modifiedAggGroupTwo = aggGroup.map((player) => {
   let aggPropertyListTwo = {
     ...player, 
-    "isVeteran": player.age >= 30 ? true : false
+    isVeteran: player.age >= 30 ? true : false
   };
   return aggPropertyListTwo;
 });
 
-console.log(modifiedAggGroup)
 console.log(modifiedAggGroupTwo)
+
+// Лучшее решение.
+
+const modAggGroup = aggGroup.map((player) => {
+    return {
+      ...player,
+      isVeteran: player.age >= 30
+    }
+});
+
+console.log(modAggGroup)
